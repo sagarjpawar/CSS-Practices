@@ -8,13 +8,10 @@ body {
 }
 
 #product-overview {
-  background: #ff1b68;
+  background: url("./freedom.jpg");
   width: 100%;
   height: 548px;
-  margin: 20px;
   padding: 10px;
-  border: 2px solid black;
-  border-radius: 2px;
 }
 
 .section-title {
@@ -29,3 +26,62 @@ body {
 /* h1 {
   font-family: sans-serif;
 } */
+
+.main-header {
+  background: green;
+  padding: 10px;
+}
+
+:is(.menu-container, .logo-container) {
+  display: inline-block;
+}
+
+.logo-container {
+  vertical-align: middle;
+}
+
+.logo-container a {
+  font-weight: 700;
+  color: rgb(1, 54, 1);
+  font-size: 20px;
+  text-decoration: none;
+}
+.menu-items {
+  text-align: right;
+  margin: 0px;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0px 15px;
+  vertical-align: middle;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(1, 54, 1);
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+.menu-item a:hover,
+.menu-item a:active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.menu-container {
+  width: calc(100% - 70px);
+}
+
+.menu-item.start-hosting a {
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: darkorchid;
+}
+.menu-item.start-hosting a:hover,
+.menu-item.start-hosting a:active {
+  color: darkorchid;
+  background: white;
+  border-bottom: none;
+}
