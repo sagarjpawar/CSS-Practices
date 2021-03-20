@@ -167,3 +167,52 @@ body {
   margin: auto;
   width: 80%;
 }
+
+#key-features{
+  background-color: rgb(236, 33, 101);
+  padding: 16px;
+  margin-top: 80px;
+  color: white;
+}
+#key-features .section-title{
+  text-align: center;
+  color: white;
+  margin: 32px;
+}
+.key-feature__list{
+  text-align: center;
+}
+
+.key-feature{
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-feature .key-feature__image{
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-color: #ffcede;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.key-feature .key-feature__description{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main-footer{
+  margin-top: 48px;
+  padding: 32px;
+  text-align: center;
+  background: black;
+}
+
+.main-footer__link{
+  display: inline-block;
+  margin: 0px 16px;
+  text-decoration: none;
+  color: white;
+}
