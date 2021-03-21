@@ -7,6 +7,8 @@ main {
   background: rgba(213, 255, 220, 0.95);
   margin: 16px 0px;
   width: 80%;
+  position: relative;
+  z-index: 1;
 }
 .package a {
   text-decoration: none;
@@ -54,9 +56,6 @@ main {
   color: white;
 }
 
-#plus a {
-  position: relative;
-}
 .background {
   background-image: url(../images/plans-background.jpg);
   width: 100%;
@@ -75,4 +74,5 @@ main {
   display: inline-block;
   font-size: 12px;
   margin: 20px;
+  z-index: 10;
 }
