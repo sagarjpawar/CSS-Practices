@@ -1,10 +1,10 @@
 main {
-   padding-top: 32px;
+  padding-top: 32px;
 }
 .package {
   border: 4px solid #034d17;
   border-left: none;
-  background: #cdf3d7;
+  background: rgba(213, 255, 220, 0.95);
   margin: 16px 0px;
   width: 80%;
 }
@@ -12,7 +12,7 @@ main {
   text-decoration: none;
   color: black;
   padding: 32px;
-  display:block;
+  display: block;
 }
 
 .package .package__title {
@@ -44,11 +44,35 @@ main {
   border-right: none;
 }
 
-.clearfix{
-    clear: both;
+.clearfix {
+  clear: both;
 }
 
-#premium,#premium .package__title{
-    background:#034d17;
-    color: white;
+#premium,
+#premium .package__title {
+  background: #034d17;
+  color: white;
+}
+
+#plus a {
+  position: relative;
+}
+.background {
+  background-image: url(../images/plans-background.jpg);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.package__badge {
+  background: rgb(238, 66, 66);
+  padding: 8px;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 20px;
 }
