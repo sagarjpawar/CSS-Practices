@@ -6,6 +6,12 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
+
+main {
+  min-height: calc(100vh - 3.5rem - 8rem);
+  margin-top: 3.5rem;
+}
+
 .main-header {
   width: 100%;
   background: #2ddf5c;
@@ -47,8 +53,7 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.4rem;
-  height: 22px;
+  height: 2.5rem;
   /* width: 22px; */
   display: inline-block;
   vertical-align: middle;
@@ -59,9 +64,9 @@ body {
   /* width: 100%; */
 }
 .main-nav {
-  display: inline-block;
+  display: none;
   text-align: right;
-  width: calc(100% - 122px);
+  width: calc(100% - 44px);
   vertical-align: middle;
 }
 
@@ -74,6 +79,7 @@ body {
 .main-nav__item {
   display: inline-block;
   margin: 0 1rem;
+  vertical-align: middle;
 }
 
 .main-nav__item a,
@@ -115,8 +121,8 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0px 1rem;
+  display: block;
+  margin: 1rem 0px;
   text-decoration: none;
   color: white;
 }
@@ -161,4 +167,17 @@ body {
 
 .open {
   display: block;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+  .main-nav {
+    display: inline-block;
+  }
+  .main-footer__link {
+    display: inline-block;
+    margin: 0px 1rem;
+  }
 }
