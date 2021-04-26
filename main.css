@@ -99,24 +99,6 @@
 .plan__feature {
   margin: 0.5rem 0px;
 }
-.plan__btn {
-  padding: 0.5rem;
-  color: white;
-  background: #0e4f1f;
-  border-radius: 8px;
-  border: solid 1px #0e4f1f;
-  font: inherit;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.plan__btn:focus,
-.plan__btn:active {
-  border: solid 1px #0e4f1f;
-  outline: none;
-  background: white;
-  color: #0e4f1f;
-}
 
 #key-features {
   background-color: rgb(236, 33, 101);

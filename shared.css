@@ -112,19 +112,61 @@ main {
   background: white;
   border: none;
 }
+.button {
+  padding: 0.5rem;
+  color: white;
+  background: #0e4f1f;
+  border-radius: 8px;
+  border: solid 1px #0e4f1f;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  border: solid 1px #0e4f1f;
+  outline: none;
+  background: white;
+  color: #0e4f1f;
+}
+
+.button:focus {
+  outline: none;
+}
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
 
 .main-footer {
-  margin-top: 3rem;
-  padding: 2rem;
-  text-align: center;
   background: black;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .main-footer__link {
   display: block;
-  margin: 1rem 0px;
-  text-decoration: none;
+  margin: 1rem 0;
+}
+
+.main-footer__link a {
   color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
 }
 
 .backdrop {

@@ -1,6 +1,6 @@
 var backdrop = document.querySelector(".backdrop")
 var modal = document.querySelector(".modal")
-var buttons = document.querySelectorAll(".plan .plan__btn")
+var buttons = document.querySelectorAll(".plan .button")
 var cancelPlan = document.querySelector('.modal .modal__action.modal__action--negative')
 var toggleButton = document.querySelector('.toggle-button')
 var mobileNav = document.querySelector('.mobile-nav')
