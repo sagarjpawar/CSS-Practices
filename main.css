@@ -197,23 +197,32 @@
 }
 @media (min-width: 40rem) {
   .plan {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
     min-width: 13rem;
     max-width: 25rem;
+    height: 28rem;
   }
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px grey;
+    z-index: 50;
+    height: 30rem;
   }
   .plan__list {
-    margin: auto;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .key-feature {
-    display: inline-block;
     width: 30%;
-    vertical-align: top;
     max-width: 25rem;
+  }
+  .key-feature__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
