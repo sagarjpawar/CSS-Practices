@@ -20,6 +20,7 @@ main {
   width: 80%;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .package a {
   text-decoration: none;
@@ -93,8 +94,13 @@ main {
   right: 0px;
   display: inline-block;
   font-size: 0.8rem;
-  margin: 1.2rem;
+  margin: 0;
   z-index: 10;
+  /* transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem); */
+  transform: rotateZ(45deg) translate(3.5rem, -1rem);
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
 }
 
 @media (min-width: 40rem) {
