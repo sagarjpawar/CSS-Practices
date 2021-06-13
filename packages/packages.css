@@ -57,6 +57,7 @@ main {
 #free:active,
 #free:hover {
   border-color: red;
+  animation: push-up 500ms 0.1s ease-in forwards;
 }
 
 #free {
@@ -117,5 +118,17 @@ main {
 
   #free {
     border-right: 4px solid #034d17;
+  }
+}
+
+@keyframes push-up {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(-1rem);
   }
 }

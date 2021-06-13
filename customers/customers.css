@@ -9,6 +9,10 @@ main {
   margin-top: 6rem;
 } */
 
+.testimonial__image-container:hover {
+  animation: flip-container 1s 0.2s ease-out forwards;
+}
+
 .testimonial__image-container {
   width: 60%;
   box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, 0.6);
@@ -77,5 +81,17 @@ main {
   }
   .testimonial__info {
     width: 30%;
+  }
+}
+
+@keyframes flip-container {
+  0% {
+    transform: rotateY(0deg) skew(20deg);
+  }
+  50% {
+    transform: rotateY(180deg) skew(20deg);
+  }
+  100% {
+    transform: rotateY(360deg) skew(20deg);
   }
 }
